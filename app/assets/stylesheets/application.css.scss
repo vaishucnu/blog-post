@@ -29,14 +29,14 @@
  }
  
  #sidebar {
-     width: 200px;
+     width: 150px;
      position: fixed;
      left: 0;
      top: 0;
      height: 100%;
-     background: #88D0AD;
+     background: #0c486d;
      padding: 7em 0 0 0;
-     border-right: 1px solid #b8e2fe;
+     border-right: 1px solid #0d2635;
  
      ul {
          list-style: none;
@@ -98,12 +98,12 @@
  }
  
  #main_content {
-     margin-left: 200px;
+     margin-left: 150px;
      #header {
-         padding: 1.2em 3.5em;
+         padding: 2.2em 3.5em;
          border-bottom: 1px solid #b8e2fe;
-         background: #529FCD;
-         color: #FFF;
+         background: #0c486d;
+         color: rgb(238, 198, 198);
          p {
              display: inline;
          }
