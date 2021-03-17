@@ -16,8 +16,11 @@
     <div id="sidebar">
     <ul>
       <li class="category"><%= link_to "Blog", root_path %></li>
-      <li><%= link_to "Posts", root_path %></li>
       <li><%= link_to "About", about_path %></li>
+      <li><%= link_to "Posts", root_path %></li>
+
+      <li><%= link_to "Todo-list", index_path %></li>
+      
     </ul>
     <% if !user_signed_in? %>
 			<p class="sign_in"><%= link_to "User Login", new_user_session_path %></p>
@@ -37,6 +40,7 @@
       <% if user_signed_in? %>
           <div class="buttons">
             <button class="button"><%= link_to "New Post", new_post_path %></button>
+            <button class="button"><%= link_to "New Todo", new_todo_path %></button>
 
             <button class="button"><%= link_to "Log Out", destroy_user_session_path, method: :delete %></button>
           </div>

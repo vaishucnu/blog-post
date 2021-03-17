@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   
   resources :posts do
     resources :comments
+    
   end
+  resources :todos 
   root "posts#index"
   get '/about', to: 'pages#about'
+  get '/index', to: 'todos#index'
 end
