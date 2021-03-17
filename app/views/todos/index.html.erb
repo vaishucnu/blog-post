@@ -1,0 +1,14 @@
+<div id="todo_wrapper">
+        
+        <h1> Todo-List</h1><br>
+    
+        <% if user_signed_in? %>
+            <% Todo.all.each do |todo| %>
+                <h2><%= link_to todo.title, todo %></h1>
+                <p style= "display: inline;"><input type ="checkbox", checked="checked" ></p>
+                <p style= "display: inline;"><%= todo.description %></p>
+                
+            <% end %>
+        <% end %>
+
+    </div>

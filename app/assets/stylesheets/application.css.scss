@@ -14,7 +14,8 @@
  *= require_self
  */
  @import 'normalize';
-
+ @import "bootstrap-sprockets";
+@import "bootstrap";
  html, body {
      font-family: 'PT Sans Narrow', sans-serif;
  }
@@ -29,14 +30,14 @@
  }
  
  #sidebar {
-     width: 200px;
+     width: 150px;
      position: fixed;
      left: 0;
      top: 0;
      height: 100%;
-     background: #88D0AD;
+     background: #0c486d;
      padding: 7em 0 0 0;
-     border-right: 1px solid #b8e2fe;
+     border-right: 1px solid #0d2635;
  
      ul {
          list-style: none;
@@ -98,12 +99,12 @@
  }
  
  #main_content {
-     margin-left: 200px;
+     margin-left: 150px;
      #header {
-         padding: 1.2em 3.5em;
+         padding: 2.2em 3.5em;
          border-bottom: 1px solid #b8e2fe;
-         background: #529FCD;
-         color: #FFF;
+         background: #0c486d;
+         color: rgb(238, 198, 198);
          p {
              display: inline;
          }
@@ -115,7 +116,7 @@
              float: right;
              margin-top: -6px;
              .button {
-                 font-size: .8em;
+                 font-size: 1.2em;
                  margin-left: .5em;
              }
          }
@@ -129,7 +130,7 @@
                  font-weight: 500;
                  text-decoration: none;
                  color: #529FCD;
-                 font-size: 1.2em;
+                 font-size: 1.8em;
                  &:hover {
                      color: #22487b;
                  }
@@ -144,6 +145,7 @@
              margin: .5em 0 0 0;
          }
      }
+     
      #post_content {
          padding: 1em 3em;
          .title {
@@ -154,7 +156,7 @@
              margin-bottom: 0;
          }
          .body {
-             font-size: 1.1em;
+             font-size: 2.1em;
              line-height: 1.75;
          }
          .date_and_author {
@@ -220,7 +222,7 @@
                  font-weight: 500;
              }
              p {
-                 font-size: 1.1em;
+                 font-size: 4.1em;
                  line-height: 1.75;
              }
              a {
@@ -229,6 +231,33 @@
                  text-decoration: none;
              }
          }
+     }
+     
+     #todo_wrapper{
+            padding: 1em 5em;
+            height: 100px;
+            
+            margin: 0;
+            color:rgb(66, 66, 165);
+            background-image: url("todo.jpg");
+           
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right;
+            font-size: 30px;
+
+            h1 
+            {
+                text-align: center;
+                color: #1c2526;
+                
+            }
+            h2 
+            {
+                color: #0c486d;
+            }
+            
+           
      }
      .links {
          margin: 2em 0;
