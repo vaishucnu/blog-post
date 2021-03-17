@@ -1,17 +1,17 @@
 
 <div id="todo_wrapper">
     <div class="col-md-10 col-md-offset-1">
+        <br><br><br>
+        <h2 class="border_title"><%= @todo.title %></h2>
+        <p class="spac"><%= time_ago_in_words(@todo.created_at) %> Ago</p><br><br>
+        <p ><%= @todo.description %></p>
         <br>
-        <h2 style= "display: inline;"><%= @todo.title %></h2>
-        <%= time_ago_in_words(@todo.created_at) %> Ago</p><br>
-        <p><%= @todo.description %></p>
         <br>
-        
         <div class="col-md-0 col-md-offset-0">
             <% if user_signed_in? %>
-                <p style= "display: inline-block;"><%= link_to "Back", index_path, class: "button" %></p>
-                <p style= "display: inline-block;"><%= link_to "Edit", edit_todo_path(@todo), class: "button" %></p>
-                <p style= "display: inline;"><%= link_to "Delete", todo_path(@todo), method: :delete, class: "button", data: { confirm: "Are you sure?" } %></p>
+                <p class="button"><%= link_to "Back", index_path, class: "button" %></p>
+                <p class="button"><%= link_to "Edit", edit_todo_path(@todo), class: "button" %></p>
+                <p class="button"><%= link_to "Delete", todo_path(@todo), method: :delete, class: "button", data: { confirm: "Are you sure?" } %></p>
             
 	
             <% end %>    

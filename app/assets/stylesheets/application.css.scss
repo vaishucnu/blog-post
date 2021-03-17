@@ -245,7 +245,33 @@
             background-size: cover;
             background-position: right;
             font-size: 30px;
+            .spac
+            {
+                font-size: 15px;
+                display: inline;
+                color: #543251;
+                
+            }
+            .border_title
+            {
+                border-style: outset ;
+                display: inline;
+            }
+            
+            .button
+            {
 
+                
+                display: inline-block;
+                outline: none;
+                
+                border: 1.5px rgb(240, 185, 185);
+                padding: .2em;
+                border-radius: 0.5em;
+     
+                color: #d5669a;
+                
+            }
             h1 
             {
                 text-align: center;
@@ -255,6 +281,7 @@
             h2 
             {
                 color: #0c486d;
+                
             }
             
            
